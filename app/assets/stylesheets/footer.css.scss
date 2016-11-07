@@ -1,4 +1,4 @@
-$footer-height: 100px;
+$footer-height: auto;
 
 html,
 body {
@@ -11,9 +11,9 @@ body {
   min-height: 100%;
   height: auto;
   /* Negative indent footer by its height */
-  margin: 0 auto -$footer-height;
+  margin: 0 auto (-$footer-height);
   /* Pad bottom by footer height */
-  padding: 0 0 $footer-height;
+  padding: 0 0 ($footer-height);
 }
 
 /* Set the fixed height of the footer here */
@@ -23,9 +23,35 @@ body {
   background-color: rgba(36,32,33,0.9);
   font-family: "Helvetica Neue", Helvetica;
   padding:10px 0px;
-  margin-top:30px;
+  font-weight:100;
 }
 
 #footer a {
   color:white;
+}
+
+.social-button {
+  width: 32px;
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration:none;
+}
+
+$footer-height-mobile: 200px;
+@media (max-width: 750px) {
+  #footer {
+    height:$footer-height-mobile;
+  }
+
+  #wrap {
+    margin: 0 auto -$footer-height-mobile;
+    /* Pad bottom by footer height */
+    padding: 0 0 $footer-height-mobile;
+  }
+
+  #footer .social {
+    margin-top:10px;
+  }
 }
