@@ -1,4 +1,4 @@
 == README
 
-"I think pizza is pretty good man?"
-- Chris
+"I think pizza is awful"
+- Marco
