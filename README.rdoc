@@ -1,4 +1,1 @@
 == README
-
-"I think pizza is pretty good man?"
-- Chris
